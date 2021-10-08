@@ -14,3 +14,14 @@
         Veti primi: 1232
         Veti printa: False
 """
+
+mesaj = int(input())
+
+if len(str(mesaj)) == 1:
+    print(True)
+
+elif str(mesaj) == str(mesaj)[::-1]:
+    print(True)
+
+else:
+    print(False)

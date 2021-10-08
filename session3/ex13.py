@@ -6,3 +6,15 @@
         Veti primi: 2 si 3
         Veti printa: 8
 """
+
+x = int(input())
+y = int(input())
+
+# v1
+print('Rezultatul este {}'.format(x**y))
+
+
+# v2
+putere = x ** y
+
+print(f'{x} la puterea lui {y} = {putere}')

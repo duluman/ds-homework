@@ -6,3 +6,17 @@
         Veti primi: 'cmi'
         Veti printa: 3
 """
+
+variabila = input()
+
+# v1
+print(len(variabila))
+
+# v2
+litere = 0
+lista_mea = variabila
+for i in lista_mea:
+    litere += 1
+
+print(litere)
+

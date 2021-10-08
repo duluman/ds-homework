@@ -10,7 +10,8 @@ x = input()
 x = int(x)
 
 # Vom printa toate numerele intregi de la 0 pana la x (primit de la tastatura)
-# functia range(x) ne va intoarce lista de elemente intregi [0, 1, 2, .., x]
+# functia range(x) ne va intoarce lista de elemente intregi [0, 1, 2, .., x-1]
 # Iteram prin toate elementele listei oferite de functia range()
-for i in range(x):
-    print(i)
+for i in range(x+1):
+    if i % 2 == 0:
+        print(i)

@@ -7,3 +7,10 @@
         Veti primi: 'Center for Intelligent Machines', 2, 5
         Veti printa: 'nter'
 """
+
+mesaj = input()
+x = int(input())
+y = int(input())
+
+substring = mesaj[x:y+1]
+print(substring)

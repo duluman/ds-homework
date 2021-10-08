@@ -10,3 +10,14 @@
         Veti primi: 'cmi', 'center', 'for', 'machines'
         Veti printa: ['cm', 'cente', 'fo', 'machine']
 """
+
+mesaj = input()
+lista_stringuri = []
+
+while mesaj != 'exit':
+
+    lista_stringuri.append(mesaj[:-1])
+
+    mesaj = input()
+
+print(lista_stringuri)

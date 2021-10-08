@@ -13,6 +13,8 @@ x = input()
 # Cat timp de la tastatura nu primim exit ca si valoare
 while x != 'exit':
     # Adaugam la lista elementul nou primit de la tastatura
+    if x == 'stop':
+        break
     l1.append(x)
     x = input()
 

@@ -19,5 +19,10 @@ l2 = ['a', 'b', 'c', 'd']
 # In varaibila d1 avem un dictionar gol
 d1 = {}
 
+if len(l1) == len(l2):
+    for i in range(len(l1)):
+        d1[l1[i]] = l2[i]
+
 # Afisam listele l1 si l2
 print(l1, l2)
+print('Dictionarul arata: \n', d1)

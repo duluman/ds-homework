@@ -13,3 +13,13 @@
         False
         False
 """
+mesaj = input()
+
+while mesaj != 'exit':
+
+    if int(mesaj) % 2 == 0:
+        print('True')
+    else:
+        print('False')
+
+    mesaj = input()

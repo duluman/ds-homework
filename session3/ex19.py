@@ -6,3 +6,15 @@
         Veti primi: 'cmi'
         Veti printa: ('c', 'm', 'i')
 """
+
+mesaj = input()
+
+lista = []
+
+for i in mesaj:
+
+    lista.append(i)
+
+t_string = tuple(lista)
+
+print(t_string)

@@ -16,3 +16,11 @@
             2: 'i'
         }
 """
+
+mesaj = input()
+x = int(input())
+dictionar = {}
+for i in range(x):
+    dictionar[i] = mesaj[i]
+
+print(dictionar)

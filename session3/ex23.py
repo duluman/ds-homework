@@ -14,3 +14,21 @@
         Veti primi: 'cojoc'
         Veti printa: True
 """
+
+mesaj = input()
+
+# v1
+if mesaj == mesaj[::-1]:
+    print('True')
+else:
+    print('False')
+
+# v2
+mesaj_inversat = ''
+for i in range(len(mesaj)):
+    mesaj_inversat += mesaj[-1-i]
+
+if mesaj == mesaj_inversat:
+    print('True')
+else:
+    print('False')

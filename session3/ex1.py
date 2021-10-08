@@ -8,7 +8,8 @@
 # Acesta este un comentariu
 
 # Ii dam variabilei l1 ca si valoare o lista cu 4 elemente (1,2,3,4)
-l1 = [1, 2, 3, 4]
 
+l1 = [1, 2, 3, 4]
+l1.append(10)
 # Afisam lista. Pentru a vedea rezultatul, rulati acest script.
 print(l1)
