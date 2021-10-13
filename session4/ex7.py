@@ -12,3 +12,18 @@
     Observatii:
         - functia trebuie sa aiba MAXIM 1 linie de cod ca si body
 """
+
+
+def cuvant_compus(prefix, word, suffix):
+    return prefix + word + suffix
+
+
+print(cuvant_compus('a', 'x', 'b'))
+
+# input mode
+
+prefix = input("Tasteaza prefixul: ")
+word = input("Tasteaza cuvantul: ")
+suffix = input("Tasteaza sufixul: ")
+
+print(cuvant_compus(prefix, word, suffix))

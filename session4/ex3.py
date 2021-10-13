@@ -12,4 +12,19 @@
 
 
 def func(x):
-    pass
+    n = 0
+    lista_mea = []
+    while n < x:
+        lista_mea.append(n)
+        n = n + 1
+    return lista_mea
+
+
+print(func(3))
+
+
+# input mode
+
+numar = int(input("Spune-mi un numar si iti voi afisa o lista cu toate numerele pana la cel ales: \n \t"))
+
+print(func(numar))

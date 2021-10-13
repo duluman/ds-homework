@@ -36,11 +36,29 @@ def generate_random_str(str_length):
     while str_length:
         str_length -= 1
         rand_str += random.choice(['a', 'x', 'c', 'm', 'i'])
-    print(f"The generated string is {rand_str}")
-    return rand_str
+    # print(f"The generated string is {rand_str}")
+    return rand_str.upper()  # le-am facut UPPERCASE pentru a identifica mai usor CARACTERELE
 
 
 prefix = input('Give me an prefix\n')
 x = int(input('Give me a number to generate the random string\n'))
+sufix = input('Give me a sufix \n')
+# print(add_prefix(prefix, generate_random_str(x)))
 
-print(add_prefix(prefix, generate_random_str(x)))
+
+def add_sufix(pfx, rand_str, sfx):
+    cerere = 1
+    while cerere < 4:
+        for litera in sfx:
+            if litera in list(pfx):
+                cerere += 1
+
+                sfx = input('Give me another input: \n ')
+                break
+            else:
+                return pfx + rand_str + sfx
+    return pfx + rand_str
+
+
+print(add_sufix(prefix, generate_random_str(x), sufix))
+
