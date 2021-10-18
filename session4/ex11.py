@@ -8,6 +8,20 @@
 """
 
 
-# decorate me
+def dec_txt(func):
+    def wrapper():
+        file_write = open("output11.txt", "w")
+        file_write.write(func())
+        file_write.close()
+
+    return wrapper
+
+
+@dec_txt
 def f():
     return "CMI"
+
+
+f()
+print("Am apelat functia si am scris in fisierul text")
+

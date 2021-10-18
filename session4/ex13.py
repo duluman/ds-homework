@@ -6,6 +6,27 @@
 """
 
 
-# decoarate me
+def dex_txt(func):
+    def wrapper():
+        mesaj = func()
+        mesaj_nou = ""
+        verificator = 0
+        for litera in mesaj:
+            if verificator % 2 == 0:
+                mesaj_nou += litera.upper()
+            else:
+                mesaj_nou += litera
+
+            verificator += 1
+
+        return mesaj_nou
+
+    return wrapper()
+
+
+@dex_txt
 def f():
     return 'cmi'
+
+
+print(f)

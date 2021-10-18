@@ -19,3 +19,34 @@
         - veti primi input: 'cEVa1'
             ---> ceva1
 """
+
+
+def f_upper(my_string):
+
+    return my_string.upper()
+
+
+def f_lower(my_string):
+
+    return my_string.lower()
+
+
+def f_mesaj():
+
+    mesaj = input("Hai sa discutam: ")
+    return mesaj
+
+
+def call_changers(f):
+
+    if len(f) % 2 == 0:
+        mesaj_modificat = f_upper(f)
+    else:
+        mesaj_modificat = f_lower(f)
+
+    return mesaj_modificat
+
+
+print(call_changers(f_mesaj()))
+
+
